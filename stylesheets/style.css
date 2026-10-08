@@ -1,0 +1,37 @@
+:root {
+    --white: #ffffff;
+    --black: #000000;
+    --dark-grey: #262626;
+    --medium-grey: #8d8d8d;
+    --grey: #c5c5c5;
+    --light-grey: #cfcfcf;
+    --dark-green: #00ff29;
+    --acid-green: #79ff39;
+    --background-grey: #2d2d2d;
+    --background-dark-grey: #232323;
+    --text-grey: #e1e1e1;
+}
+
+body {
+    padding: 20px;
+    font-family: 'PT Root UI', Helvetica, Arial, sans-serif;
+    background-color: var(--medium-grey);
+    color: var(--dark-grey);
+}
+
+.Button {
+    width: fit-content;
+    padding: 8px 10px;
+    font-size: 14px;
+    text-align: center;
+    text-transform: capitalize;
+    background-color: var(--white);
+    color: var(--black);
+    cursor: pointer;
+    user-select: none;
+}
+
+.Button:hover {
+    background-color: var(--white);
+    filter: brightness(90%);
+}
