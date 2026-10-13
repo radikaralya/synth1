@@ -7,8 +7,9 @@
   <meta name="description" content="SYN†H — двухголосный witch house синтезатор и барабанный секвенсор.">
   <title>SYN†H — pink ritual</title>
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23f5c4ef'/%3E%3Ctext x='32' y='48' text-anchor='middle' font-size='52' fill='%23a33c80'%3E†%3C/text%3E%3C/svg%3E">
-  <link rel="stylesheet" href="stylesheets/synth.css">
-  <script src="javascripts/synth.js" defer></script>
+  <link rel="stylesheet" href="stylesheets/style.css">
+  <link rel="stylesheet" href="stylesheets/layout.css">
+  <script src="javascripts/script.js" defer></script>
 </head>
 <body>
   <div class="background" aria-hidden="true"></div>
@@ -21,7 +22,7 @@
         <button id="stop" aria-label="Остановить секвенсор"><span class="stop-icon"></span> STOP</button>
       </div>
       <h1 aria-label="SYNTH">SYN†H</h1>
-      <label class="tempo">BPM <input id="bpm" type="number" min="45" max="180" value="120" aria-label="Темп, ударов в минуту"></label>
+      <label class="tempo">BPM <input id="bpm" type="number" min="45" max="180" value="88" aria-label="Темп, ударов в минуту"></label>
     </header>
     <div class="voices" id="voices"></div>
     <div class="lower-panels">
@@ -31,13 +32,13 @@
       </section>
       <section class="effects" aria-labelledby="effects-title">
         <h2 id="effects-title">EFFECTS</h2>
-        <label>DISTORTION <input id="distortion" type="range" min="0" max="100" value="35" aria-label="Distortion"></label>
+        <label>DISTORTION <input id="distortion" type="range" min="0" max="100" value="94" aria-label="Distortion"></label>
         <label>FILTER <input id="filter" type="range" min="0" max="100" value="82" aria-label="Частота фильтра"></label>
-        <label>DELAY <input id="delay" type="range" min="0" max="100" value="32" aria-label="Delay"></label>
-        <label>REVERB <input id="reverb" type="range" min="0" max="100" value="22" aria-label="Reverb"></label>
+        <label>DELAY <input id="delay" type="range" min="0" max="100" value="42" aria-label="Delay"></label>
+        <label>REVERB <input id="reverb" type="range" min="0" max="100" value="48" aria-label="Reverb"></label>
       </section>
     </div>
-    <label class="master">MASTER <input id="master" type="range" min="0" max="100" value="72" aria-label="Общая громкость"></label>
+    <label class="master">MASTER <input id="master" type="range" min="0" max="100" value="52" aria-label="Общая громкость"></label>
   </main>
   <footer><span id="status" role="status">READY TO HAUNT</span><span>A S D F / J K L ; <span class="divider">†</span> SPACE — PLAY / STOP</span><button id="motion" aria-pressed="true" aria-label="Анимация фона">GLITCH ON</button></footer>
 </body>
